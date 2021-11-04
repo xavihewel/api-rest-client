@@ -23,7 +23,7 @@
 
         <%
             Client client = ClientBuilder.newBuilder().build();
-            WebTarget target = client.target("http://localhost:8080/myfirst-webservice/resources/StudentFacadeREST/simpleAsync");
+            WebTarget target = client.target("http://localhost:8080/webapi-rest-java-ee/resources/StudentFacadeREST/simpleAsync");
 
             Invocation.Builder reqBuilder = target.request();
             AsyncInvoker asyncInvoker = reqBuilder.async();
